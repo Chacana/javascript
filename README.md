@@ -4,9 +4,12 @@
 
 ## Contenido
 
-1. [¿Qué podemos hacer con JavaScript?](#quepodemoshacer)
 
-### ¿Qué podemos hacer con JavaScript?
+1. [Tipos de variables](#tiposvariable)
 
-Texto de prueba
+
+### Tipos de variables
+
+[En desarrollo...]
+
 
