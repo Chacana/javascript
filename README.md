@@ -1,12 +1,6 @@
 # FRONT-END
 
-*Este articulo tiene como objetivo explicar algunos conceptos, funcionalidades y utilidades que les puede ser útil para el desarrollo de sus aplicaciones y sistemas web.
-Mencionaré las siguientes tecnologías:
-
-- Javascript
-- jQuery
-- Angular
-- Mas...
+*Este articulo tiene como objetivo explicar algunos conceptos, funcionalidades y utilidades que les pueda servir para su desarrollo.*
 
 ## Contenido
 
@@ -14,7 +8,7 @@ Mencionaré las siguientes tecnologías:
 1. [Loading automatico en Ajax](#loading)
 
 
-### Loading en peticiones Ajax
+### Loading en peticiones Ajax jQuery
 
 Es probable que en tus desarrollos te hayas encontrado con la necesidad de implementar una animación de carga cada vez que realizamos una petición Ajax de jQuery. 
 
@@ -37,7 +31,7 @@ function getUsers() {
 
 ```
 
-Si analizamos el código anterior veremos que la función getUsers() nos mostrará una animación de loading (mostrarLoading()), luego ejecutará una petición Ajax y este se ocultará cuando termine la petición (ocultarLoading()). 
+Si analizamos el código anterior veremos que la función getUsers() nos mostrará una animación de loading (mostrarLoading()), luego ejecutará una petición Ajax y este se ocultará cuando termine (ocultarLoading()). 
 
 Este código funcionará correctamente pero tendríamos que repetir el llamado de mostrarLoading() y ocultarLoading() cada vez que tengamos una petición Ajax haciendo que nuestro código tenga muchas líneas duplicadas. Es por eso que les quiero enseñar la siguiente solución:
 
