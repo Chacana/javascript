@@ -36,10 +36,10 @@ Si analizamos el código anterior veremos que la función getUsers() nos mostrar
 Este código funcionará correctamente pero tendríamos que repetir el llamado de mostrarLoading() y ocultarLoading() cada vez que tengamos una petición Ajax haciendo que nuestro código tenga muchas líneas duplicadas. Es por eso que les quiero enseñar la siguiente solución:
 
 ```javascript
-      $.ajaxSetup({
-        beforeSend: () => mostrarLoading(),
-        complete: () => ocultarLoading()
-    });
+  $.ajaxSetup({
+      beforeSend: () => mostrarLoading(),
+      complete: () => ocultarLoading()
+  });
 ```
 
 Con ajaxSetup le indicamos a Ajax un comportamiento por defecto que tendrá cada vez que se ejecute y complete una petición. En este ejemplo llamaremos a la función mostrarLoading() antes de ejecutar la petición y una vez que complete satisfactoriamente (success) se llamara la otra función de ocultarLoading().
